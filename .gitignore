@@ -1,0 +1,11 @@
+node_modules
+vendor/selenium-debug.log
+.idea/*
+reports/
+!reports/.gitkeep
+
+config/
+!config/.gitkeep
+
+screens/
+!screens/.gitkeep
