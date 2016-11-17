@@ -33,7 +33,7 @@
         "path" : "screens"
       },
       "desiredCapabilities": {
-        "browserName": "chrome",
+        "browserName": "phantomjs",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
