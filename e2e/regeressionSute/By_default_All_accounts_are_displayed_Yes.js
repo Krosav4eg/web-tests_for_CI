@@ -4,7 +4,7 @@ var presteps = require('./../presteps/presteps.js');
 module.exports = _.assign(presteps, {
     '@disabled': false,
     'authorization': function (browser) {
-        browser.url('http://test.skynet.managementevents.com/')
+        browser.url('http://alpha.me-test.ru:8080/')
 
             .assert.title('Skynet 2')
             .waitForElementVisible('input[name="username"]', 4000)
@@ -15,7 +15,7 @@ module.exports = _.assign(presteps, {
             .click('button[type="submit"]')
             .pause(4000)
             .assert.containsText('div#page-heading', 'Dashboard')
-            .url('http://test.skynet.managementevents.com/event/2008/delegates')
+            .url('http://alpha.me-test.ru:8080/event/2008/delegates')
     },
     'select YES filter': function (browser) {
         browser

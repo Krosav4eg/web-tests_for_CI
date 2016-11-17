@@ -5,7 +5,7 @@ module.exports = _.assign(presteps, {
     '@disabled': false,
     'authorization': function (browser) {
         browser
-            .url('http://test.skynet.managementevents.com/')
+            .url('http://alpha.me-test.ru:8080/')
             .assert.title('Skynet 2')
             .waitForElementVisible('input[name="username"]', 4000)
             .setValue('input[name="username"]', 'xsolve')
